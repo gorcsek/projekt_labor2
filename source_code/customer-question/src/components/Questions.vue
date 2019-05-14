@@ -12,8 +12,8 @@
           </el-col>
         </el-col>
         <el-col v-for="q,id in questions1" :key="id" class="q-row">
-          <el-col :span="6" class="ql-header">{{q.question}}</el-col>
-          <el-col :span="18" class="q-answers">
+          <el-col :span="7" class="ql-header">{{q.question}}</el-col>
+          <el-col :span="17" class="q-answers">
             <el-radio-group v-model="q.answer">
               <el-radio v-for="a,id in answers1" :label="a" :key="id" v-on:click=""></el-radio>
             </el-radio-group>
