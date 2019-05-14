@@ -158,7 +158,7 @@ export default {
     },
     save(){
       console.log("save")
-      this.axios.post("/customers/save-result",{name:this.resp, results: [this.questions1,this.questions_2] }).then((response) => {
+      this.axios.post("/customers/save-result",{customer: this.questions_2, results: this.questions1 }).then((response) => {
         console.log(response.data)
       })
       //this.axios.post("/customers/save-result",{name:this.resp, result: "Végeredmény: " + this.result + ' / ' + this.questions.length }).then((response) => {
