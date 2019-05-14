@@ -1,0 +1,43 @@
+Követelmény specifikáció
+========================
+
+Webes alkalmazás fejlesztés
+
+Név:	
+Telefon:
+e-mail:
+
+I. Projekt hivatkozási neve: Online Vevõi kérdõív
+
+II. Választott platform:	VueJs, Yii2   
+
+
+III. Alkalmazás rövid leírása: 
+Az alkalmazás fõ feladata a vevõi értékelések gyûjtése, online webes csatornán. Jelenlegi alkalmazásnak nem célja az offline értékelések digitalizálása és gyûjtése. Az alkalmazás képes a cég ügyfeleinek értékeléseit begyûjteni majd segít kiértékelni a cég alkalmazottainak. Szükséges viszont, hogy platform független legyen, a több területrõl érkezõ megrendelõk miatt.
+
+
+IV. Funkcionális követelmények:
+Kérdõív kérdéseit egyszer elég összeállítani (statikus) (max évi 2 módosítás lehet).
+A kitöltött kérdõívek mentése a cél, valamint a mentett adatok megjelenítése (akár plain textben is elég)
+Az adminisztrátornak szükséges felhasználónév és jelszó, valamint ezen adatok módosítása. 
+Az adminisztrátor nem módosíthat a beküldött adatokon.
+Több felhasználó (adminisztrátor) kezelése.
+Válaszadásnál legyen lehetõség szabad szavas, igen/nem és szubjektív állásfoglalás mértékének (Egyáltalán nem - teljesen igen) )megadására.
+
+
+V. Nem funkcionális követelmények:
+ A kiértékelés automatizálás nem cél. Nem cél ugyanúgy megjeleníteni a kérdõívet ahogy kitöltésre került.
+
+
+VI. Felhasználói követelmények:
+
+
+VII. Rendszer követelmények: 
+Bármilyen böngészõ (kivétel IE 8 és alatta)
+
+
+VIII. Biztonsági megkötések: 
+Az alkalmazás biztonságos protokollon keresztül lehet elérhetõ ami minimum TLS1.0 vagyis HTTPS protokollt jelent.
+
+
+IX. Képernyõképek- tervek:
