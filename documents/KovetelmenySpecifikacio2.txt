@@ -1,43 +1,39 @@
-Követelmény specifikáció
+KÃ¶vetelmÃ©ny specifikÃ¡ciÃ³
 ========================
 
-Webes alkalmazás fejlesztés
+Webes alkalmazÃ¡s fejlesztÃ©s
 
-Név:	
-Telefon:
-e-mail:
+I. Projekt hivatkozÃ¡si neve: Online VevÃµi kÃ©rdÃµÃ­v
 
-I. Projekt hivatkozási neve: Online Vevõi kérdõív
+II. VÃ¡lasztott platform:	VueJs, Yii2   
 
-II. Választott platform:	VueJs, Yii2   
-
-
-III. Alkalmazás rövid leírása: 
-Az alkalmazás fõ feladata a vevõi értékelések gyûjtése, online webes csatornán. Jelenlegi alkalmazásnak nem célja az offline értékelések digitalizálása és gyûjtése. Az alkalmazás képes a cég ügyfeleinek értékeléseit begyûjteni majd segít kiértékelni a cég alkalmazottainak. Szükséges viszont, hogy platform független legyen, a több területrõl érkezõ megrendelõk miatt.
+III. AlkalmazÃ¡s rÃ¶vid leÃ­rÃ¡sa: 
+Az alkalmazÃ¡s fÃµ feladata a vevÃµi Ã©rtÃ©kelÃ©sek gyÃ»jtÃ©se, online webes csatornÃ¡n. Jelenlegi alkalmazÃ¡snak nem cÃ©lja az offline Ã©rtÃ©kelÃ©sek digitalizÃ¡lÃ¡sa Ã©s gyÃ»jtÃ©se. Az alkalmazÃ¡s kÃ©pes a cÃ©g Ã¼gyfeleinek Ã©rtÃ©kelÃ©seit begyÃ»jteni majd segÃ­t kiÃ©rtÃ©kelni a cÃ©g alkalmazottainak. SzÃ¼ksÃ©ges viszont, hogy platform fÃ¼ggetlen legyen, a tÃ¶bb terÃ¼letrÃµl Ã©rkezÃµ megrendelÃµk miatt.
 
 
-IV. Funkcionális követelmények:
-Kérdõív kérdéseit egyszer elég összeállítani (statikus) (max évi 2 módosítás lehet).
-A kitöltött kérdõívek mentése a cél, valamint a mentett adatok megjelenítése (akár plain textben is elég)
-Az adminisztrátornak szükséges felhasználónév és jelszó, valamint ezen adatok módosítása. 
-Az adminisztrátor nem módosíthat a beküldött adatokon.
-Több felhasználó (adminisztrátor) kezelése.
-Válaszadásnál legyen lehetõség szabad szavas, igen/nem és szubjektív állásfoglalás mértékének (Egyáltalán nem - teljesen igen) )megadására.
+IV. FunkcionÃ¡lis kÃ¶vetelmÃ©nyek:
+KÃ©rdÃµÃ­v kÃ©rdÃ©seit egyszer elÃ©g Ã¶sszeÃ¡llÃ­tani (statikus) (max Ã©vi 2 mÃ³dosÃ­tÃ¡s lehet).
+A kitÃ¶ltÃ¶tt kÃ©rdÃµÃ­vek mentÃ©se a cÃ©l, valamint a mentett adatok megjelenÃ­tÃ©se (akÃ¡r plain textben is elÃ©g)
+Az adminisztrÃ¡tornak szÃ¼ksÃ©ges felhasznÃ¡lÃ³nÃ©v Ã©s jelszÃ³, valamint ezen adatok mÃ³dosÃ­tÃ¡sa. 
+Az adminisztrÃ¡tor nem mÃ³dosÃ­that a bekÃ¼ldÃ¶tt adatokon.
+TÃ¶bb felhasznÃ¡lÃ³ (adminisztrÃ¡tor) kezelÃ©se.
+VÃ¡laszadÃ¡snÃ¡l legyen lehetÃµsÃ©g szabad szavas, igen/nem Ã©s szubjektÃ­v Ã¡llÃ¡sfoglalÃ¡s mÃ©rtÃ©kÃ©nek (EgyÃ¡ltalÃ¡n nem - teljesen igen) )megadÃ¡sÃ¡ra.
 
 
-V. Nem funkcionális követelmények:
- A kiértékelés automatizálás nem cél. Nem cél ugyanúgy megjeleníteni a kérdõívet ahogy kitöltésre került.
+V. Nem funkcionÃ¡lis kÃ¶vetelmÃ©nyek:
+A kiÃ©rtÃ©kelÃ©s automatizÃ¡lÃ¡s nem cÃ©l. Nem cÃ©l ugyanÃºgy megjelenÃ­teni a kÃ©rdÃµÃ­vet ahogy kitÃ¶ltÃ©sre kerÃ¼lt.
 
 
-VI. Felhasználói követelmények:
+VI. FelhasznÃ¡lÃ³i kÃ¶vetelmÃ©nyek:
+VÃ¡laszok Ã©s megjegyzÃ©sek rÃ¶gzÃ­tÃ©se a kitÃ¶ltÃ©s vÃ©gÃ©n
+Az adminisztrÃ¡tornak tÃ¡blÃ¡zatban dinamikusan megjelenenik az Ã¶sszes kitÃ¶ltÃ¶tt kÃ©rdÅ‘Ã­v
+
+VII. Rendszer kÃ¶vetelmÃ©nyek: 
+BÃ¡rmilyen bÃ¶ngÃ©szÃµ (kivÃ©tel IE 8 Ã©s alatta)
 
 
-VII. Rendszer követelmények: 
-Bármilyen böngészõ (kivétel IE 8 és alatta)
+VIII. BiztonsÃ¡gi megkÃ¶tÃ©sek: 
+Az alkalmazÃ¡s biztonsÃ¡gos protokollon keresztÃ¼l lehet elÃ©rhetÃµ ami minimum TLS1.0 vagyis HTTPS protokollt jelent.
 
 
-VIII. Biztonsági megkötések: 
-Az alkalmazás biztonságos protokollon keresztül lehet elérhetõ ami minimum TLS1.0 vagyis HTTPS protokollt jelent.
-
-
-IX. Képernyõképek- tervek:
+IX. KÃ©pernyÃµkÃ©pek- tervek:
