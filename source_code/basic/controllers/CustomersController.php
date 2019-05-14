@@ -8,12 +8,15 @@ use app\models\CustomersSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-
+use yii\filters\AccessControl;
 /**
  * CustomersController implements the CRUD actions for Customers model.
  */
+
 class CustomersController extends Controller
 {
+    
+    public $enableCsrfValidation = false;
     /**
      * {@inheritdoc}
      */
@@ -24,8 +27,10 @@ class CustomersController extends Controller
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'delete' => ['POST'],
+                    'saveResult' => ['POST'],
                 ],
             ],
+
         ];
     }
 
@@ -97,21 +102,30 @@ class CustomersController extends Controller
 
     public function actionSaveResult()
     {
-        \Yii::$app->response->format = \yii\web\Response::FORMAT_JSON;
-
-        $model = new Customers();
-
         if (Yii::$app->request->isPost) {
-            ///modell feltöltése a post adatokkal
-            if( $model->save()){
+            $model = new Customers();
 
+            $data = (array) json_decode(file_get_contents('php://input'));
+            $customer = (array) $data['customer'];
+            $result = (array) $data['results'];
+            $model->name = $customer[count($customer)-2]->textarea->value;
+            $model->filling_name = $customer[count($customer)-1]->textarea->value;
+            $model->desc = json_encode($customer);
+            $model->result = json_encode($result);
+            
+            // echo "<pre>";var_dump($customer[count($customer)-1]->textarea->value);die;
+
+            if($model->save()){
+                echo '{"status":"ok"}';
+            }else{
+                echo '{"status":"error"}';
             }
-            return echo '{"status":"ok"}';
-        }
+        }else{
+            echo '{"status":"only post"}';
 
-        return $this->render('update', [
-            'model' => $model,
-        ]);
+        }
+        return;
+
     }
 
     /**

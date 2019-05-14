@@ -6,14 +6,21 @@ use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\Response;
+use yii\helpers\Url;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\Route;
+use app\models\Users;
+use app\models\Transport;
+use app\models\TransportSearch;
+use yii\data\ActiveDataProvider;
+use yii\db\Query;
 
 class SiteController extends Controller
 {
     /**
-     * {@inheritdoc}
+     * @inheritdoc
      */
     public function behaviors()
     {
@@ -39,7 +46,7 @@ class SiteController extends Controller
     }
 
     /**
-     * {@inheritdoc}
+     * @inheritdoc
      */
     public function actions()
     {
@@ -61,8 +68,12 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+      
         return $this->render('index');
+
     }
+
+ 
 
     /**
      * Login action.
@@ -79,8 +90,6 @@ class SiteController extends Controller
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
             return $this->goBack();
         }
-
-        $model->password = '';
         return $this->render('login', [
             'model' => $model,
         ]);
