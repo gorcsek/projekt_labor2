@@ -1,3 +1,5 @@
+-- Adminer 4.3.1 MySQL dump
+
 SET NAMES utf8;
 SET time_zone = '+00:00';
 SET foreign_key_checks = 0;
@@ -5,14 +7,14 @@ SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
 
 DROP TABLE IF EXISTS `customers`;
 CREATE TABLE `customers` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'Létrehozva',
-  `name` varchar(250) NOT NULL COMMENT 'Név',
-  `desc` text COMMENT 'Megjegyzés',
-  `address` text COMMENT 'Cím',
-  `filling_name` varchar(250) DEFAULT NULL COMMENT 'Kitöltő neve',
-  `result` json NOT NULL COMMENT 'Eredmény'
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `name` varchar(250) CHARACTER SET latin1 NOT NULL COMMENT 'Név',
+  `desc` text CHARACTER SET latin1 COMMENT 'Megjegyzés',
+  `filling_name` varchar(250) CHARACTER SET latin1 DEFAULT NULL COMMENT 'Kitöltő neve',
+  `result` json NOT NULL COMMENT 'Eredmény',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
 DROP TABLE IF EXISTS `users`;
@@ -33,4 +35,6 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `users` (`id`, `username`, `password`, `email`, `realname`, `enabled`, `created`, `authkey`, `role`, `lastlogin`, `rfid`) VALUES
-(1,	'admin',	'$2y$13$k2c7mKmtluKFPt/ttH7n8OOKW7qpiGqNcqZk1WYas3nB1ggsZKZLW',	'admin@bsilosped.hu',	'Admin',	1,	'2019-05-12',	'7e8a6fb5-d864-11e7-94c8-843a4b64218c',	100,	'2019-05-12 11:05:26',	'550D552DB');
+(1, 'admin',  '$2y$13$d7SuGeaiOQn343GDL.DpD.BOIs7wtUuPmCtTyZo5hJfjDfQege.0u', 'admin@devop.hu', 'Admin',  1,  '2019-05-12', '7e8a6fb5-d864-11e7-94c8-843a4b64218c', 100,  '2019-05-12 11:05:26',  '');
+
+-- 2019-05-14 19:21:13
