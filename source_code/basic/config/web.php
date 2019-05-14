@@ -23,6 +23,7 @@ $config = [
         'user' => [
             'identityClass' => 'app\models\Users',
             'enableAutoLogin' => true,
+            'enableSession' => true,
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',
@@ -59,10 +60,10 @@ $config = [
             'thousandSeparator' => ' ',
             'currencyCode' => 'HUF',
         ],
-        'request' => [
+        /*'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => '0CVlxZ1i0UtuEGLxZS7VcRfXDpaTE9aS',
-        ],
+        ],*/
        /* 'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,

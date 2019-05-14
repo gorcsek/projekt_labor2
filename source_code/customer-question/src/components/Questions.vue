@@ -65,7 +65,7 @@ export default {
       answers: [],
       cmsg: "",
       resp: "",
-      answers1: ["Teljesen egyet értek", "Egyet értek", "Egyeti is értek meg nem is", "Nem értek egyet", "Egyáltalán nem értek egyet"],
+      answers1: ["Igen", "Részben", "Igen is meg nem is", "Nem minden esteben", "Nem"],
       questions1: 
         [
           {question: 'Kollégáinkkal jó a munkakapcsolat', 
