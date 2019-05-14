@@ -21,7 +21,7 @@
         </el-col>
       </el-row>
       <el-row>
-        <el-col v-for="q,id in questions_2" :key="id">
+        <el-col v-for="q,id in questions_2" :key="id" class="cq-row">
           <el-col>
             <h3 class="subtitle">{{q.question}}</h3>
           </el-col>
@@ -36,15 +36,15 @@
           </el-col>
         </el-col>
       </el-row>
-      <el-row>
+      <el-row class="q-footer">
         <el-col>
           <br>
-          <p>
+          <p style="font-weight: bold">
             Köszönjük hogy kitöltötte kérdőívünket!
           </p>
         </el-col>
         <el-col>
-          <el-button v-on:click="save">Küldés</el-button>
+          <el-button class="send-button" type="success" v-on:click="save">Küldés</el-button>
         </el-col>
       </el-row>
     </div>
@@ -248,18 +248,27 @@ a {
   display: none;
 }
 .ql-header{
-  margin-top: 10px;
+  margin-top: 15px;
   text-align: left;
 }
 .q-row{
   margin-top: 5px;
   margin-bottom: 5px;
-  border-bottom: 1px solid #f6f6f6;
+  border-bottom: 0px solid #f6f6f6;
+}
+.q-row:nth-child(even){
+  background-color: #f3f3f3;
 }
 .subtitle{
   text-align: left;
 }
 h2{
   color: #000;
+}
+.q-footer{
+  margin: 30px;
+}
+.send-button{
+  width: 90%;
 }
 </style>
