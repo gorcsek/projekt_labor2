@@ -1,7 +1,13 @@
 <template>
   <div id="app">
     <el-col class="app-header">
-      <h2 class="center">Vevői Kérdőiv</h2>
+      <el-col :span="4">
+        <img src="/static/sla.png" class="app-header-icon">
+      </el-col> 
+      <el-col :span="16">
+        <h2 class="center">Vevői Kérdőiv</h2>
+      </el-col> 
+      <el-col :span="4"></el-col> 
     </el-col>
     <el-col class="app-content">
       <Questions/>
@@ -44,7 +50,7 @@ body{
 .app-header{
   border-bottom: 1px solid;
   position: fixed;
-  background: white;
+  background: #f0f0f0;
   z-index: 10;
 }
 .app-footer{
@@ -53,6 +59,10 @@ body{
   z-index: 100;
   position: fixed;
   bottom: 0;
+}
+.app-header-icon{
+  height: 50px;
+  margin:10px;
 }
 @media print { body { background: none; } }
 </style>
