@@ -3,12 +3,15 @@
 namespace app\controllers;
 
 use Yii;
+use app\models\Users;
+use app\models\UsersSearch;
 use app\models\Customers;
 use app\models\CustomersSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
+use app\components\AccessRule;
 /**
  * CustomersController implements the CRUD actions for Customers model.
  */
@@ -20,7 +23,7 @@ class CustomersController extends Controller
     /**
      * {@inheritdoc}
      */
-    public function behaviors()
+   /* public function behaviors()
     {
         return [
             'verbs' => [
@@ -31,6 +34,44 @@ class CustomersController extends Controller
                 ],
             ],
 
+        ];
+    }*/
+    public function behaviors()
+    {
+        return [
+            'verbs' => [
+                'class' => VerbFilter::className(),
+                'actions' => [
+                    'delete' => ['POST'],
+                    'saveResult' => ['POST'],
+                ],
+            ],
+            'access' => [
+                   'class' => AccessControl::className(),
+                   // We will override the default rule config with the new AccessRule class
+                   'ruleConfig' => [
+                       'class' => AccessRule::className(),
+                   ],
+                   'only' => ['index','create', 'update', 'delete'],
+                   'rules' => [
+                       [
+                           'actions' => ['index','create', 'update', 'delete'],
+                           'allow' => true,
+                           // Allow users, moderators and admins to create
+                           'roles' => [
+                               Users::ROLE_ADMIN
+                           ],
+                       ],
+                       [
+                           'actions' => ['update', 'view'],
+                           'allow' => true,
+                           // Allow users, moderators and admins to create
+                           'roles' => [
+                               Users::ROLE_ADMIN
+                           ],
+                       ],
+                    ]
+                ]
         ];
     }
 
