@@ -31,7 +31,7 @@
             </el-radio-group>
             <el-col v-if="q.textarea">
               <h4>{{q.textarea.label}}</h4>
-              <el-input type="textarea" v-if="q.textarea.visible" ></el-input>
+              <el-input v-model="q.textarea.value" type="textarea" v-if="q.textarea.visible" ></el-input>
             </el-col>
           </el-col>
         </el-col>
@@ -104,20 +104,20 @@ export default {
         questions_2: [
             {question: 'Amennyiben volt reklamációja felénk megfelelő választ kapott?', 
               answers: ["Igen", "Nem",],
-              textarea: {visible: true, label: 'Megjegyzés'}},
+              textarea: {visible: true, label: 'Megjegyzés' ,value:""}},
             {question: 'Szívesen ajánlaná a termékeinket, szolgáltatásainkat másoknak is?', 
               answers: ["Igen", "Nem"],
-              textarea: {visible: true, label: 'Megjegyzés'}},
+              textarea: {visible: true, label: 'Megjegyzés',value:""}},
             {question: 'Kérjük írja meg, hogy miben javíthatnánk, fejlődhetnénk, hogy a későbbiekben még inkább elégedett legyen cégünkkel és termékeinkkel.', 
               answers: [],
-              textarea: {visible: true}},
+              textarea: {visible: true,value:""}},
             {question: 'Hozzájárult, hogy cégünk honlapján, referenciái között, feltüntesse az Ön cégét?', 
               answers: ["Igen", "Nem"]},
             {question: 'Cégnév', 
-              textarea: {visible: true},
+              textarea: {visible: true,value:""},
               answers: []},
             {question: 'Név', 
-              textarea: {visible: true},
+              textarea: {visible: true,value:""},
               answers: []},
          ]
     }
