@@ -33,7 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
             //'password',
             'email:email',
             'realname',
-            'rfid',
+            //'rfid',
             'enabled',
             'created',
         ],
