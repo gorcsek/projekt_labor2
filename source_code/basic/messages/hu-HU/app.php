@@ -24,7 +24,10 @@ return [
     'Cancel' => 'Mégsem',
     'User' => 'Felhasználó',
     'print' => 'Nyomtatás',
-    'All' => 'Mind'
+    'All' => 'Mind',
+    'Customers' => 'Ügyfelek',
+    'Users' => 'Felhasználók',
+    'Home' => 'Főoldal'
  ];  
 
 

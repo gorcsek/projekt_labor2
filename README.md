@@ -16,3 +16,6 @@ A buildelés során automatikusan a yii2 megfelelő `basic/web/index.html` mapp�
 # Yii2
 `source_code/basic/`
 
+yii web dir
+`source_code/basic/web`
+
