@@ -34,7 +34,8 @@ return [
 	'Create Customers' => 'Ügyfelek létrehozása',
 	'Password retry' => 'Jelszó újra',
 	'Login' => 'Bejelentkezés',
-	'Logout (admin)' => 'Kijelentkezés (admin)'
+	'Logout (admin)' => 'Kijelentkezés (admin)',
+    'Action' => 'Művelet'
  ];  
 
 
