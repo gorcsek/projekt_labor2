@@ -156,15 +156,26 @@ export default {
     log: function(l){
       console.log(l)
     },
+    clearData(){
+      for(var z in this.questions1){
+        this.questions1[z].answer = null;
+      }
+      for(var z in this.questions_2){
+        this.questions_2[z].answer = null;
+        if(typeof this.questions_2[z].textarea != 'undefined'){
+          this.questions_2[z].textarea.value = null;
+        }
+      }
+    },
     save(){
       console.log("save")
-      
+      var _this = this;
       this.axios.post("/customers/save-result",{customer: this.questions_2, results: this.questions1 }).then((response) => {
-        this.$notify({
+        _this.$notify({
           title: 'Sikeres mentés',
           message: 'Köszönjük, hogy kitöltötte!',
         });
-        setTimeout(function(){location.reload},3000)
+        _this.clearData();
       })
       //this.axios.post("/customers/save-result",{name:this.resp, result: "Végeredmény: " + this.result + ' / ' + this.questions.length }).then((response) => {
       //  console.log(response.data)
