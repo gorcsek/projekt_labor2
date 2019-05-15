@@ -33,8 +33,11 @@ $this->params['breadcrumbs'][] = $this->title;
             /*'desc:ntext',
             'result',*/
             'created',
-
-            ['class' => 'yii\grid\ActionColumn'],
+            //['class' => 'yii\grid\ActionColumn'],
+            ['class' => 'yii\grid\ActionColumn',
+              'header' => 'Action',
+             'template' => '{view}',
+             ], 
         ],
     ]); ?>
 
