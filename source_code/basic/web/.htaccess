@@ -9,10 +9,10 @@
 	# For everything else, redirect to index.php:
 	RewriteRule . index.php
 </ifModule>
-AuthUserFile "/home/projekt/public_html/htusers"
-AuthType Basic
-AuthName "Secret Projekt Labor "
-require valid-user
-<Files htusers>
-deny from all
-</Files>
+#AuthUserFile "/home/projekt/public_html/htusers"
+#AuthType Basic
+#AuthName "Secret Projekt Labor "
+#require valid-user
+#<Files htusers>
+#deny from all
+#</Files>
