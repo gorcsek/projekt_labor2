@@ -27,7 +27,14 @@ return [
     'All' => 'Mind',
     'Customers' => 'Ügyfelek',
     'Users' => 'Felhasználók',
-    'Home' => 'Főoldal'
+    'Home' => 'Főoldal',
+	'Logout' => 'Kijelentkezés',
+	'Create Users' => 'Felhasználók létrehozása',
+	'Powered by' => 'Üzemeltető',
+	'Create Customers' => 'Ügyfelek létrehozása',
+	'Password retry' => 'Jelszó újra',
+	'Login' => 'Bejelentkezés',
+	'Logout (admin)' => 'Kijelentkezés (admin)'
  ];  
 
 
