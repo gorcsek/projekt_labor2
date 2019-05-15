@@ -25,7 +25,8 @@ return [
     'User' => 'Felhasználó',
     'print' => 'Nyomtatás',
     'All' => 'Mind',
-    'Customers' => 'Ügyfelek'
+    'Customers' => 'Ügyfelek',
+    'Users' => 'Felhasználók'
  ];  
 
 
