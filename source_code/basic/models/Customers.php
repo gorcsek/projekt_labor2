@@ -49,6 +49,7 @@ class Customers extends \yii\db\ActiveRecord
             'desc' => 'Megjegyzés',
             'filling_name' => 'Kitöltő neve',
             'result' => 'Eredmény',
+            'action' => 'Művelet'
         ];
     }
 
