@@ -24,7 +24,8 @@ return [
     'Cancel' => 'Mégsem',
     'User' => 'Felhasználó',
     'print' => 'Nyomtatás',
-    'All' => 'Mind'
+    'All' => 'Mind',
+    'Customers' => 'Ügyfelek'
  ];  
 
 
