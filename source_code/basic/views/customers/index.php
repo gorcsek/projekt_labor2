@@ -35,7 +35,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'created',
             //['class' => 'yii\grid\ActionColumn'],
             ['class' => 'yii\grid\ActionColumn',
-              'header' => 'Action',
+              'header' => Yii::t('app','Action'),
              'template' => '{view}',
              ], 
         ],
