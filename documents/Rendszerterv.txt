@@ -1,0 +1,8 @@
+Rendszerterv
+============
+
+1. Felépítés, mûködés
+
+2. Adatbázisterv
+
+3. Látványtervek
