@@ -158,8 +158,13 @@ export default {
     },
     save(){
       console.log("save")
+      
       this.axios.post("/customers/save-result",{customer: this.questions_2, results: this.questions1 }).then((response) => {
-        console.log(response.data)
+        this.$notify({
+          title: 'Sikeres mentés',
+          message: 'Köszönjük, hogy kitöltötte!',
+        });
+        setTimeout(function(){location.reload},3000)
       })
       //this.axios.post("/customers/save-result",{name:this.resp, result: "Végeredmény: " + this.result + ' / ' + this.questions.length }).then((response) => {
       //  console.log(response.data)
