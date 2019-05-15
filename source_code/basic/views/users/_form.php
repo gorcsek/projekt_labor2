@@ -16,8 +16,6 @@ use yii\web\View;
 
     <?= $form->field($model, 'realname')->textInput(['maxlength' => true]) ?>
     
-    <?= $form->field($model, 'rfid')->textInput(['maxlength' => true]) ?>
-
     <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'password')->passwordInput(['maxlength' => true]) ?>
