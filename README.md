@@ -1,8 +1,8 @@
-# projekt_labor2
-EKE Projekt Labor
+# projekt_labor 2
+EKE Projekt Labor 2
 
 # Online ügyfél kérdőív
-A funkcionális specifikáció a /documents mappában található
+A funkcionális specifikáció és a többi dokumentáció a /documents mappában található
 
 # VueJS
 `source_code/customers-question/`
