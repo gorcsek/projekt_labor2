@@ -6,7 +6,7 @@ A funkcionális specifikáció a /documents mappában található
 
 # VueJS
 `source_code/customers-question/`
-
+requirement: `nodejs`, `npm`
 teszt indítás: `npm run dev` 
 buildelés : `npm run-script build`
 
