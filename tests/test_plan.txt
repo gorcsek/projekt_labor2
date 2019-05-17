@@ -1,0 +1,45 @@
+Tesztelési terv, tesztesetek leírása
+
+https://projekt.devop.hu/
+1. Kérdőív oldal
+    - Az oldal megjelenik és nem látok hibaüzenetet
+    - A szövegek kódolása rendben van
+    - Az oldal elrendezese, megjelenése nincs "szétcsúszva"
+    - A kérdőív mezői elérhetőek és kitölthetőek
+    - Radio button működés OK (egyszerre csak egy jelölhető ki)
+    - Mentés gomb után visszajelzést látok, hogy a mentés sikeres volt
+
+https://projekt.devop.hu/site/login
+2. Bejelentkező oldal
+    - Az oldal megjelenik és nem látok hibaüzenetet
+    - A szövegek kódolása rendben van
+    - Az oldal elrendezese, megjelenése nincs "szétcsúszva"
+    - Hiányos kitöltés esetén hibaüzenet látszódik
+    - Rossz jelszó esetén hibaüzenet látszódik
+    - Sikeres felhasználónév, jelszó páros esetén bejelentkeztetés
+
+https://projekt.devop.hu/customers
+3. Ügyfelek oldal
+    - Az oldal megjelenik és nem látok hibaüzenetet
+    - A szövegek kódolása rendben van
+    - Az oldal elrendezese, megjelenése nincs "szétcsúszva"
+    - Ügyfelek létrehozása gombra kattintva átirányít a https://projekt.devop.hu/customers/create oldalra
+    - Mentés gombra kattintva hiányos adatok esetén hibaüzenet látszódik
+    - Mezők kitöltése után mentés gomb után visszairányít a listaoldalra és a felvitt ügyfél sora megjelenik, adatai helyesek
+    - Listaoldalon a szem ikonra kattintva megjelennek az ügyfél adatai és a kérdésekre adott válaszok is
+
+https://projekt.devop.hu/users
+4. Felhasználók oldal
+    - Az oldal megjelenik és nem látok hibaüzenetet
+    - A szövegek kódolása rendben van
+    - Az oldal elrendezese, megjelenése nincs "szétcsúszva"
+    - Felhasználó létrehozása gombra kattintva átirányít a https://projekt.devop.hu/users/create oldalra
+    - Mentés gombra kattintva hiányos adatok esetén hibaüzenet látszódik
+    - Mezők kitöltése után mentés gomb után visszairányít a listaoldalra és a felvitt felhasználó sora megjelenik, adatai helyesek
+    - Az újonnan létrehozott felhasználó jelszavával képesek vagyunk bejelentkezni
+    - Szem ikonra kattintva megjelennek a felhasználó adatai
+    - Ceruza ikonra kattinva megjelenik a felvitelhez hasonló form, előtöltve az kiválasztott felhasználó adatival
+    - Kuka ikonra kattintva megjelenik egy megerősítő popup, hogy biztosan törölni szeretném-e
+    - Mégse gombra kattintva nem történik törlés
+    - Rendben gombra kattintva a felhasználó törlésre kerül
+    - A törölt felhasználó adatival nem vagyunk képesek többet belépni az oldalra
